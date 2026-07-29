@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "eyebrow": "Communication · Conseil · Accompagnement — République Démocratique du Congo",
+    "titre_avant": "Nous faisons de la communication ",
+    "titre_surligne": "utile",
+    "titre_apres": ".",
+    "sous_titre": "Nous accompagnons les organisations, entreprises, ONG, institutions publiques et projets de développement dans la clarté de leur message, la structuration de leurs activités et le renforcement de leur visibilité — avec le sens du contexte et du terrain.",
+    "bouton_1": "Découvrir nos domaines",
+    "bouton_2": "Parler de votre projet"
+  },
+  "metiers": ["Communication", "Audiovisuel", "Conseil", "Formation", "Événementiel"],
+  "manifeste": {
+    "eyebrow": "Notre philosophie",
+    "phrase_1": "Nous ne cherchons pas à produire ",
+    "gras_1": "beaucoup",
+    "phrase_2": ", mais à produire ",
+    "gras_2": "utile",
+    "phrase_3": ".",
+    "publics": [
+      { "titre": "Organisations & entreprises", "desc": "Structurer messages et activités" },
+      { "titre": "ONG & projets de développement", "desc": "Visibilité et documentation" },
+      { "titre": "Institutions publiques", "desc": "Communication institutionnelle" },
+      { "titre": "Initiatives locales", "desc": "Accompagnement de terrain" }
+    ]
+  },
+  "approche": {
+    "eyebrow": "Notre approche",
+    "titre": "Quatre principes simples, tenus jusqu'au bout.",
+    "intro": "Une collaboration fondée sur la confiance, le dialogue et l'adaptation au contexte.",
+    "principes": [
+      { "nom": "Écouter", "desc": "Prendre le temps de comprendre vos objectifs, vos réalités et vos parties prenantes." },
+      { "nom": "Comprendre", "desc": "Analyser le contexte, les enjeux institutionnels et ce qui vous rend singulier." },
+      { "nom": "Proposer", "desc": "Des solutions concrètes, réalistes et adaptées — jamais des recettes toutes faites." },
+      { "nom": "Accompagner", "desc": "Rester à vos côtés dans la mise en œuvre, avec sérieux et sens du terrain." }
+    ]
+  },
+  "domaines": {
+    "eyebrow": "Domaines d'intervention",
+    "titre": "Un accompagnement complet, du conseil au terrain.",
+    "intro": "Filtrez par famille de métier. Nous intervenons de façon flexible, selon les besoins réels.",
+    "items": [
+      { "categorie": "communication", "tag": "Communication", "titre": "Communication stratégique", "desc": "Plans de communication, messages clés et storytelling pour donner cohérence et impact à votre parole." },
+      { "categorie": "conseil", "tag": "Conseil", "titre": "Affaires publiques & institutionnel", "desc": "Relations avec les autorités, les institutions et les parties prenantes, menées avec prudence et responsabilité." },
+      { "categorie": "conseil", "tag": "Conseil", "titre": "RSE & relations communautaires", "desc": "Favoriser des relations apaisées entre entreprises, projets et communautés, et valoriser les actions sociales." },
+      { "categorie": "conseil", "tag": "Conseil", "titre": "Gestion de crise & réputation", "desc": "Un accompagnement discret et mesuré des situations sensibles et de l'image publique." },
+      { "categorie": "production", "tag": "Production", "titre": "Audiovisuel & documentation", "desc": "Vidéos institutionnelles, interviews, reportages et photographie — utiles et adaptés au projet." },
+      { "categorie": "production", "tag": "Événementiel", "titre": "Organisation d'événements", "desc": "Ateliers, conférences, lancements et rencontres — simples, bien organisés et utiles." },
+      { "categorie": "conseil", "tag": "Conseil", "titre": "Brainstorming & conception de projets", "desc": "Structurer les idées et transformer une intuition en projet clair et planifié." },
+      { "categorie": "formation", "tag": "Formation", "titre": "Formation en communication", "desc": "Formations sur mesure pour ONG, entreprises, institutions et jeunes professionnels." },
+      { "categorie": "formation", "tag": "Formation", "titre": "Journalistes & acteurs des médias", "desc": "Renforcement des capacités : interview, reportage, éthique et journalisme communautaire." },
+      { "categorie": "communication", "tag": "Communication", "titre": "Consultance ONG & développement", "desc": "Communication de projet, documentation des activités et visibilité des résultats." },
+      { "categorie": "formation", "tag": "Formation", "titre": "Appui aux structures académiques", "desc": "Conférences, ateliers et encadrement pour relier la formation à la pratique." }
+    ]
+  },
+  "positionnement": {
+    "eyebrow": "Notre positionnement",
+    "titre": "Une structure flexible, au service d'une communication utile.",
+    "intro": "Nous travaillons avec sérieux, responsabilité et sens du terrain.",
+    "valeurs": [
+      { "titre": "Qualité, pas quantité", "desc": "Produire utile plutôt que produire beaucoup." },
+      { "titre": "Sens du contexte", "desc": "Comprendre les réalités locales et institutionnelles." },
+      { "titre": "Discrétion", "desc": "Une intervention prudente sur les sujets sensibles." },
+      { "titre": "Professionnalisme", "desc": "Rigueur et fiabilité à chaque étape." },
+      { "titre": "Efficacité", "desc": "Des solutions concrètes et actionnables." },
+      { "titre": "Collaboration", "desc": "Un travail fondé sur la confiance et le dialogue." }
+    ]
+  },
+  "fondateur": {
+    "eyebrow": "Le fondateur",
+    "nom": "Pacom Bagula",
+    "role": "Fondateur · Professionnel de la communication",
+    "bio": "Un parcours forgé dans les organisations internationales, les projets de développement, les institutions publiques et les initiatives communautaires. C'est cette expérience de terrain qui guide la démarche d'Idées Créatives : écouter, comprendre, puis accompagner avec justesse."
+  },
+  "contact": {
+    "eyebrow": "Parlons-en",
+    "titre": "Une idée à structurer ? Un message à faire entendre ?",
+    "lead": "Dites-nous où vous voulez emmener votre organisation. Nous intervenons de manière flexible, en fonction des besoins réels du terrain.",
+    "cartes": [
+      { "titre": "Structure", "valeur": "Idées Créatives" },
+      { "titre": "Localisation", "valeur": "République Démocratique du Congo" },
+      { "titre": "Contact", "valeur": "Pacom Bagula" },
+      { "titre": "Écrire", "valeur": "à compléter" }
+    ],
+    "email": "",
+    "bouton": "Nous écrire"
+  },
+  "footer": {
+    "description": "Communication – Audiovisuel – Conseil – Formation – Événementiel. Une communication utile, adaptée au contexte.",
+    "contact_lignes": ["Pacom Bagula", "République Démocratique du Congo"],
+    "facebook": "#",
+    "linkedin": "#",
+    "copyright": "© 2026 Idées Créatives — Tous droits réservés."
+  }
+}

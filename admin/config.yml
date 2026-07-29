@@ -1,0 +1,157 @@
+# ==========================================================================
+# Configuration de l'interface d'administration (Sveltia CMS / Decap CMS)
+# -> Remplacez VOTRE-COMPTE/VOTRE-DEPOT par votre dépôt GitHub réel.
+# -> Après connexion, Pacom modifie les textes dans des champs simples ;
+#    chaque enregistrement met à jour le site automatiquement.
+# ==========================================================================
+backend:
+  name: github
+  repo: VOTRE-COMPTE/VOTRE-DEPOT   # ex. pacom/idees-creatives
+  branch: main
+
+# Dossier où seront rangées les images téléversées depuis l'admin
+media_folder: "images"
+public_folder: "/images"
+
+locale: "fr"
+
+collections:
+  - name: "site"
+    label: "Contenu du site"
+    files:
+      - name: "accueil"
+        label: "Page d'accueil"
+        file: "content.json"
+        format: "json"
+        fields:
+          # -------- HERO --------
+          - label: "Hero (haut de page)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre — début", name: "titre_avant", widget: "string" }
+              - { label: "Titre — mot surligné", name: "titre_surligne", widget: "string" }
+              - { label: "Titre — fin", name: "titre_apres", widget: "string" }
+              - { label: "Sous-titre", name: "sous_titre", widget: "text" }
+              - { label: "Bouton 1", name: "bouton_1", widget: "string" }
+              - { label: "Bouton 2", name: "bouton_2", widget: "string" }
+
+          # -------- MÉTIERS --------
+          - label: "Métiers (défilent en haut et dans le bandeau)"
+            name: "metiers"
+            widget: "list"
+            field: { label: "Métier", name: "nom", widget: "string" }
+
+          # -------- MANIFESTE --------
+          - label: "Philosophie"
+            name: "manifeste"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Phrase — 1", name: "phrase_1", widget: "string" }
+              - { label: "Mot en gras 1", name: "gras_1", widget: "string" }
+              - { label: "Phrase — 2", name: "phrase_2", widget: "string" }
+              - { label: "Mot en gras 2", name: "gras_2", widget: "string" }
+              - { label: "Phrase — 3", name: "phrase_3", widget: "string" }
+              - label: "Publics accompagnés"
+                name: "publics"
+                widget: "list"
+                fields:
+                  - { label: "Titre", name: "titre", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "string" }
+
+          # -------- APPROCHE --------
+          - label: "Approche"
+            name: "approche"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Principes"
+                name: "principes"
+                widget: "list"
+                fields:
+                  - { label: "Nom", name: "nom", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+
+          # -------- DOMAINES --------
+          - label: "Domaines d'intervention"
+            name: "domaines"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Domaines"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Famille (filtre)"
+                    name: "categorie"
+                    widget: "select"
+                    options:
+                      - { label: "Conseil & stratégie", value: "conseil" }
+                      - { label: "Communication", value: "communication" }
+                      - { label: "Production & événementiel", value: "production" }
+                      - { label: "Formation", value: "formation" }
+                  - { label: "Étiquette", name: "tag", widget: "string" }
+                  - { label: "Titre", name: "titre", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+
+          # -------- POSITIONNEMENT --------
+          - label: "Positionnement"
+            name: "positionnement"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Valeurs"
+                name: "valeurs"
+                widget: "list"
+                fields:
+                  - { label: "Titre", name: "titre", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "string" }
+
+          # -------- FONDATEUR --------
+          - label: "Fondateur"
+            name: "fondateur"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Nom", name: "nom", widget: "string" }
+              - { label: "Rôle", name: "role", widget: "string" }
+              - { label: "Biographie", name: "bio", widget: "text" }
+
+          # -------- CONTACT --------
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Texte", name: "lead", widget: "text" }
+              - label: "Cartes de contact"
+                name: "cartes"
+                widget: "list"
+                fields:
+                  - { label: "Titre", name: "titre", widget: "string" }
+                  - { label: "Valeur", name: "valeur", widget: "string" }
+              - { label: "E-mail (pour le bouton)", name: "email", widget: "string", required: false }
+              - { label: "Texte du bouton", name: "bouton", widget: "string" }
+
+          # -------- PIED DE PAGE --------
+          - label: "Pied de page"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Lignes de contact"
+                name: "contact_lignes"
+                widget: "list"
+                field: { label: "Ligne", name: "ligne", widget: "string" }
+              - { label: "Lien Facebook", name: "facebook", widget: "string", required: false }
+              - { label: "Lien LinkedIn", name: "linkedin", widget: "string", required: false }
+              - { label: "Mention copyright", name: "copyright", widget: "string" }
