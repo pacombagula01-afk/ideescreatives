@@ -1,0 +1,130 @@
+media:
+  input: images
+  output: /images
+
+content:
+  - name: accueil
+    label: "Page d'accueil"
+    type: file
+    path: content.json
+    fields:
+      - name: hero
+        label: "Accueil (hero)"
+        type: object
+        fields:
+          - { name: eyebrow, label: "Sur-titre", type: string }
+          - { name: titre_avant, label: "Titre (début)", type: string }
+          - { name: titre_surligne, label: "Titre (mot surligné)", type: string }
+          - { name: titre_apres, label: "Titre (fin)", type: string }
+          - { name: sous_titre, label: "Sous-titre", type: text }
+          - { name: bouton_1, label: "Bouton 1", type: string }
+          - { name: bouton_2, label: "Bouton 2", type: string }
+      - name: metiers
+        label: "Métiers (défilants)"
+        type: string
+        list: true
+      - name: manifeste
+        label: "Philosophie"
+        type: object
+        fields:
+          - { name: eyebrow, label: "Sur-titre", type: string }
+          - { name: phrase_1, label: "Phrase 1", type: string }
+          - { name: gras_1, label: "Mot en gras 1", type: string }
+          - { name: phrase_2, label: "Phrase 2", type: string }
+          - { name: gras_2, label: "Mot en gras 2", type: string }
+          - { name: phrase_3, label: "Phrase 3", type: string }
+          - name: publics
+            label: "Publics accompagnés"
+            type: object
+            list: true
+            fields:
+              - { name: titre, label: "Titre", type: string }
+              - { name: desc, label: "Description", type: string }
+      - name: approche
+        label: "Approche"
+        type: object
+        fields:
+          - { name: eyebrow, label: "Sur-titre", type: string }
+          - { name: titre, label: "Titre", type: string }
+          - { name: intro, label: "Introduction", type: text }
+          - name: principes
+            label: "Principes"
+            type: object
+            list: true
+            fields:
+              - { name: nom, label: "Nom", type: string }
+              - { name: desc, label: "Description", type: text }
+      - name: domaines
+        label: "Domaines d'intervention"
+        type: object
+        fields:
+          - { name: eyebrow, label: "Sur-titre", type: string }
+          - { name: titre, label: "Titre", type: string }
+          - { name: intro, label: "Introduction", type: text }
+          - name: items
+            label: "Domaines"
+            type: object
+            list: true
+            fields:
+              - name: categorie
+                label: "Famille (filtre)"
+                type: select
+                options:
+                  values:
+                    - { value: conseil, label: "Conseil & stratégie" }
+                    - { value: communication, label: "Communication" }
+                    - { value: production, label: "Production & événementiel" }
+                    - { value: formation, label: "Formation" }
+              - { name: tag, label: "Étiquette", type: string }
+              - { name: titre, label: "Titre", type: string }
+              - { name: desc, label: "Description", type: text }
+      - name: positionnement
+        label: "Positionnement"
+        type: object
+        fields:
+          - { name: eyebrow, label: "Sur-titre", type: string }
+          - { name: titre, label: "Titre", type: string }
+          - { name: intro, label: "Introduction", type: text }
+          - name: valeurs
+            label: "Valeurs"
+            type: object
+            list: true
+            fields:
+              - { name: titre, label: "Titre", type: string }
+              - { name: desc, label: "Description", type: string }
+      - name: fondateur
+        label: "Fondateur"
+        type: object
+        fields:
+          - { name: eyebrow, label: "Sur-titre", type: string }
+          - { name: nom, label: "Nom", type: string }
+          - { name: role, label: "Rôle", type: string }
+          - { name: bio, label: "Biographie", type: text }
+      - name: contact
+        label: "Contact"
+        type: object
+        fields:
+          - { name: eyebrow, label: "Sur-titre", type: string }
+          - { name: titre, label: "Titre", type: string }
+          - { name: lead, label: "Texte", type: text }
+          - name: cartes
+            label: "Cartes de contact"
+            type: object
+            list: true
+            fields:
+              - { name: titre, label: "Titre", type: string }
+              - { name: valeur, label: "Valeur", type: string }
+          - { name: email, label: "E-mail (bouton)", type: string }
+          - { name: bouton, label: "Texte du bouton", type: string }
+      - name: footer
+        label: "Pied de page"
+        type: object
+        fields:
+          - { name: description, label: "Description", type: text }
+          - name: contact_lignes
+            label: "Lignes de contact"
+            type: string
+            list: true
+          - { name: facebook, label: "Lien Facebook", type: string }
+          - { name: linkedin, label: "Lien LinkedIn", type: string }
+          - { name: copyright, label: "Copyright", type: string }
