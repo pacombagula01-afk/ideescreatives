@@ -127,4 +127,5 @@ content:
             list: true
           - { name: facebook, label: "Lien Facebook", type: string }
           - { name: linkedin, label: "Lien LinkedIn", type: string }
+          - { name: youtube, label: "Lien YouTube", type: string }
           - { name: copyright, label: "Copyright", type: string }
